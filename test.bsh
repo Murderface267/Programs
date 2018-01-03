@@ -1,0 +1,7 @@
+#!/bin/bash
+
+function write_report {
+    echo -ne $1 > /dev/hidg0
+}
+
+write_report "\x8\0\xf\0\0\0\0\0"
